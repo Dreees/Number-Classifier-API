@@ -3,7 +3,7 @@ from flask_cors import CORS  # Import CORS
 import requests
 
 app = Flask(__name__)
-
+CORS(app)  # Enable CORS for all routes.
 
 def is_prime(n: int) -> bool:
     #Check if the number is a prime number.
